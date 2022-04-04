@@ -1,0 +1,16 @@
+@import "../base/variables";
+
+.container-contacto-primero{
+    padding-bottom: 20px;
+
+    .container-contacto{
+        background-color: $Primario;
+        border-radius: 3rem;
+
+        label{
+            color: $blanco;
+            font-weight:500;
+            font-size: 20px;
+        }
+    }
+}

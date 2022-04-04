@@ -1,0 +1,42 @@
+@import '../base/variables';
+
+
+
+.barra{
+    display: flex;
+    flex-direction: column;
+    background-color: $Secundario;
+    justify-content: space-between;
+    align-items: center;
+
+    .navegacion_enlace{
+        display: flex;
+        flex-direction: column;
+        color: $blanco;
+        font-size: 1rem; 
+        font-family: $fuenteParrafo;
+        padding: 20px 20px 20px 0;
+        border-bottom: 40px;
+}
+}
+
+@media screen and (min-width: $desktop) {
+    
+    .barra{
+        grid-template-columns: 25% 50%;
+        background-color: $Secundario;
+        position: relative;
+        
+        .navegacion_enlace{
+            display: flex;
+            justify-content: space-between;
+            color: $blanco;
+            font-size: 1.5rem; 
+            font-family: $fuenteParrafo;
+            padding: 30px 30px 20px 0;
+            border-bottom: 50px;
+            float: left;
+            }
+    }
+      
+    }

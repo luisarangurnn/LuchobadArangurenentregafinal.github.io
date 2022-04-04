@@ -1,0 +1,55 @@
+@import '../base/variables';
+
+.inspiracion-grid{
+
+    display: flex;
+    flex-direction: column;
+
+    .inspiracion-personaje{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 10px;
+
+        img{
+            height: auto;
+            width: auto;
+            max-height: 120px;
+            max-width: 200px;
+            padding: 5px;
+            border-radius: 3rem;
+        }
+
+        a{
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (min-width: $desktop){
+    .inspiracion-grid{
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr) ;
+        grid-template-rows: repeat(2, 1fr);
+    
+        .inspiracion-personaje{
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 20px;
+    
+            img{
+                height: auto;
+                width: auto;
+                max-height: 180px;
+                max-width: 250px;
+                padding: 10px;
+                border-radius: 3rem;
+            }
+
+            a{
+                text-align: center;
+            }
+        }
+    }
+
+}
